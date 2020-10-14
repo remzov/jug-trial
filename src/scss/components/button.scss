@@ -1,0 +1,57 @@
+.button {
+    @include reset-btn();
+
+    padding: 19px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    transition: background-color 0.3s;
+
+    &:hover {
+        transition: background-color 0.15s;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        font-size: 18px;
+    }
+
+    &_yellow {
+        background-color: $color-yellow;
+
+        &:hover {
+            background-color: $color-yellow-darker;
+        }
+    }
+
+    &_black {
+        background-color: $color-black;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-black-light;
+        }
+    }
+
+    &_white {
+        padding: 16px;
+        border: 1px solid $color-gray-lighter;
+        font-size: 14px;
+        line-height: 1.3;
+
+        &:hover {
+            background-color: $color-white-darker;
+        }
+    }
+
+    &_question {
+        padding: 15px;
+        border: 1px solid $color-white;
+        border-radius: 45px;
+        background: $color-black;
+        font-size: 14px;
+        line-height: 1.3;
+        color: $color-white;
+    }
+}

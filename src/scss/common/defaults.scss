@@ -1,0 +1,22 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-base;
+    font-size: 16px;
+    line-height: 1;
+    color: $color-black;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 $container-paddings-small;
+
+    @media (min-width: $breakpoint-large) {
+        padding: 0 $container-paddings-large;
+    }
+}
+

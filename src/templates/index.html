@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Jug group</title>
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <section class="intro">
+            <div class="container">
+                <div class="intro__grid">
+                    <div class="intro__leftside">
+                        <div class="intro__logo-container">
+                            <a href="https://jug.ru/" title="jug.ru" target="_blank" rel="nooprener noreferer">
+                                <img class="intro__logo" src="../img/logo.svg" alt="jug.ru group" />
+                            </a>
+                        </div>
+                        <h2 class="intro__title">Конференции, которые нужны</h2>
+                        <div class="intro__desc">
+                            <p>Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.</p>
+                            <p>С нас — крутая программа, топовые спикеры, технические доклады без воды.</p>
+                            <p>С вас — готовность смотреть и общаться.</p>
+                        </div>
+                        <div class="intro__buttons">
+                            <div class="intro__button-wrapper intro__button-wrapper_happy">
+                                <button class="intro__button button button_yellow" data-micromodal-trigger="modal-subscribe">
+                                    Купить билет
+                                </button>
+                            </div>
+                            <div class="intro__button-wrapper intro__button-wrapper_sad">
+                                <button class="intro__button intro__button_sad button button_black" data-micromodal-trigger="modal-feedback">
+                                    Послать в жопу
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__rightside">
+                        <div class="intro__conf-bg"></div>
+                        <div class="intro__lines-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal micromodal-slide" id="modal-subscribe" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true">
+                    <div class="modal__content">
+                        <div class="action-modal action-modal_subscribe">
+                            <h3 class="action-modal__title">
+                                Я хочу знать, когда будет офлайн
+                            </h3>
+                            <form class="action-modal__form">
+                                <div class="action-modal__form-row">
+                                    <input class="action-modal__input field" type="email" placeholder="Укажите email" required>
+                                    <button class="action-modal__subscribe-btn button button_white" type="submit">Подписаться</button>
+                                </div>
+                                <div class="action-modal__warn">
+                                    Нажимая на кнопку вы соглашаетесь на обработку <a href="#">персональных данных</a>
+                                </div>
+                                <div class="action-modal__success" hidden>
+                                    Спасибо, что подписались на нашу рассылку!
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <button class="modal__closer" aria-label="Close modal" data-micromodal-close>
+                        <svg class="modal__closer-icon" fill="none">
+                            <path d="M21.334 37L3 19.5 21.334 2" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                        Я кликнул просто посмотреть
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal micromodal-slide" id="modal-feedback" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true">
+                    <div class="modal__content">
+                        <div class="action-modal action-modal_feedback">
+                            <h3 class="action-modal__title">
+                                Идите в жопу!
+                            </h3>
+                            <div class="action-modal__buttons">
+                                <button class="action-modal__feedback-button button button_question" type="button">
+                                    Вы свои цены видели?
+                                </button>
+                                <button class="action-modal__feedback-button button button_question" type="button">
+                                    Доклады ни о чем
+                                </button>
+                                <button class="action-modal__feedback-button button button_question" type="button">
+                                    У вас там всё хорошо?
+                                </button>
+                                <button class="action-modal__feedback-button button button_question" type="button">
+                                    Денег нет, но вы держитесь
+                                </button>
+                            </div>
+                            <div class="action-modal__success" hidden>
+                                <div class="action-modal__success-text">
+                                    Спасибо, что поделились!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="modal__closer" aria-label="Close modal" data-micromodal-close>
+                        <svg class="modal__closer-icon" width="24" height="39" fill="none">
+                            <path d="M21.334 37L3 19.5 21.334 2" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                        Я кликнул просто посмотреть
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+.field {
+    @include set-placeholder($color-gray, 14px);
+
+    display: block;
+    height: 50px;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 11px;
+    background-color: $color-white-darker;
+}
