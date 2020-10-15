@@ -1,10 +1,13 @@
 .intro {
+    &__container {
+        overflow: hidden;
+    }
+
     &__grid {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 100%;
 
         @media (min-width: $breakpoint-medium) {
-            display: grid;
             grid-template-columns: 5fr 6.34fr;
             grid-column-gap: 100px;
         }
@@ -56,6 +59,7 @@
 
     &__button-wrapper {
         position: relative;
+        width: 50%;
         padding: 0 10px;
 
         &::before {
@@ -85,6 +89,7 @@
         }
 
         @media (min-width: $breakpoint-medium) {
+            width: auto;
             min-width: 210px;
         }
     }
